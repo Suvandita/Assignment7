@@ -102,8 +102,30 @@
         
 }
 @media screen and (max-width:500px){
-    .main__tictactoe{
-        width: 200px;
-        height: 200px;
+    .main{
+        &__heading{
+            font-size: 35px;
+        }
+        &__subheading{
+            font-size: 15px;
+        }
+        &__tictactoe{
+            width: 200px;
+            height: 200px;
+        }
     }
+    
+    .winner{
+        &__screen{
+            &__border{
+                .winner__screen__content{
+                    width: 200px;
+                    height: 200px;
+                    .result{font-size: 40px;}
+                    .restart{font-size: 20px;}
+                }
+            }
+        }
+    }
+    
 }

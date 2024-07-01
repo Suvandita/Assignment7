@@ -97,8 +97,24 @@
 }
 
 @media screen and (max-width: 500px) {
+  .main__heading {
+    font-size: 35px;
+  }
+  .main__subheading {
+    font-size: 15px;
+  }
   .main__tictactoe {
     width: 200px;
     height: 200px;
+  }
+  .winner__screen__border .winner__screen__content {
+    width: 200px;
+    height: 200px;
+  }
+  .winner__screen__border .winner__screen__content .result {
+    font-size: 40px;
+  }
+  .winner__screen__border .winner__screen__content .restart {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
