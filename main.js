@@ -48,23 +48,22 @@ function check_match(){
             flag++;
         }
     })
-    if(flag!=0){
-        for(let pattern of patterns){
-            let card1=cards[pattern[0]].textContent;
-            let card2=cards[pattern[1]].textContent;
-            let card3=cards[pattern[2]].textContent;
-            if(card1!="" && card2!="" && card3!=""){
-                if(card1===card2 && card2===card3){
-                    winner.style.display='block';
-                    winning_party.innerHTML=card1;
-                }
+    for(let pattern of patterns){
+        let card1=cards[pattern[0]].textContent;
+        let card2=cards[pattern[1]].textContent;
+        let card3=cards[pattern[2]].textContent;
+        if(card1!="" && card2!="" && card3!=""){
+            if(card1===card2 && card2===card3){
+                winner.style.display='block';
+                winning_party.innerHTML=card1;
+                return;
             }
+        
         }
-
     }
-    else{
+    if(flag==0){
         winner.style.display='block';
-        draw_result.innerHTML="Draw!!";
+        draw_result.innerHTML="Draw!!"; 
     }
     
     
